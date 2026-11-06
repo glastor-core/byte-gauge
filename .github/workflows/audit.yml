@@ -30,7 +30,7 @@ jobs:
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
 
       - name: Setup Rust Toolchain
         uses: dtolnay/rust-toolchain@stable
@@ -53,7 +53,7 @@ jobs:
         run: cargo build --release --locked
 
       - name: Restore previous audit baseline (for size delta tracking)
-        uses: actions/cache/restore@v4
+        uses: actions/cache/restore@v6
         with:
           path: .byte-gauge/baseline.json
           key: byte-gauge-baseline-${{ github.ref_name }}-${{ github.sha }}
@@ -105,7 +105,7 @@ jobs:
 
       - name: Update baseline cache on main/master
         if: github.event_name == 'push' && (github.ref_name == 'main' || github.ref_name == 'master')
-        uses: actions/cache/save@v4
+        uses: actions/cache/save@v6
         with:
           path: .byte-gauge/baseline.json
           key: byte-gauge-baseline-${{ github.ref_name }}-${{ github.sha }}
@@ -114,7 +114,7 @@ jobs:
 
       - name: Upload JSON, SARIF & CycloneDX SBOM Telemetry Artifacts
         if: always()
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: byte-gauge-telemetry
           path: |
@@ -132,7 +132,7 @@ jobs:
       security-events: write
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
 
       - name: Run GLASTOR® Nemesis SAST & IaC Security Gate
         uses: glastor-core/nemesis@v1
