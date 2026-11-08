@@ -5,6 +5,17 @@ All notable changes to **`@glastor-core/byte-gauge`** will be documented in this
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.2.0] - 2026-11-08
+
+### 🚀 Features
+- feat(action): add viral sticky PR comment footer and copyable README badge (`25b4ded`)
+
+### 📦 Maintenance & CI
+- docs: update corporate governance footer in README (`765f5a7`)
+- docs: translate README and ecosystem synergy diagram to English (`8286651`)
+- docs(readme): replace Mermaid diagram with custom vector SVG architecture diagram (`e015064`)
+
+
 ## [0.1.0] - 2026-11-06
 
 ### Added

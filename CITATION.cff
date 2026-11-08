@@ -10,8 +10,8 @@ authors:
 repository-code: "https://github.com/glastor-core/byte-gauge"
 url: "https://glastor.es"
 license: MIT
-version: "0.1.0"
-date-released: "2026-11-06"
+version: "0.2.0"
+date-released: "2026-11-08"
 keywords:
   - rust
   - simd
