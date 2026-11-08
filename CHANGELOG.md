@@ -5,6 +5,15 @@ All notable changes to **`@glastor-core/byte-gauge`** will be documented in this
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.1.1] - 2026-11-08
+
+### 🛡️ Bug Fixes & Security
+- fix(action): handle empty GitHub Actions INPUT_* env vars and scope baseline cache by Cargo.lock (`fb94565`)
+
+### 📦 Maintenance & CI
+- ci(release): handle branch-protected main gracefully in version-gate (`9986c8a`)
+
+
 ## [0.1.0] - 2026-11-06
 
 ### Added
