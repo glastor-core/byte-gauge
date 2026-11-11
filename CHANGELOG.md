@@ -5,6 +5,19 @@ All notable changes to **`@glastor-core/byte-gauge`** will be documented in this
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.2.1] - 2026-11-11
+
+### 🛡️ Bug Fixes & Security
+- fix(action): properly format sticky comment block to avoid YAML parsing error (`68a4ce1`)
+
+### 📦 Maintenance & CI
+- docs: add awesome-deno and crates.io download & version badges (`9643ffa`)
+- ci: sanitize cargo registry token whitespace in publish workflow (`9912765`)
+- chore: update Cargo.lock and use cargo login in publish workflow (`185f012`)
+- ci: add automated crates.io publish workflow (`e09f225`)
+- chore(cargo): bump version to 0.1.1 for crates.io publishing (`91e7991`)
+
+
 ## [0.1.0] - 2026-11-06
 
 ### Added
