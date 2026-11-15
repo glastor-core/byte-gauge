@@ -5,6 +5,17 @@ All notable changes to **`@glastor-core/byte-gauge`** will be documented in this
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.3.0] - 2026-11-15
+
+### 🚀 Features
+- feat(ci): add project roadmap triage automation workflow (`1ab79d8`)
+
+### 📦 Maintenance & CI
+- metadata: add documentation link pointing to docs.rs (`ecc19b2`)
+- docs: add social follow CTA and star history chart (`ce1ff2f`)
+- ci(health): add automated repository health gate and dependabot auto-merge (`75a10fd`)
+
+
 ## [0.1.0] - 2026-11-06
 
 ### Added
